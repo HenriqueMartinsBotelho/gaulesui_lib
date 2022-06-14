@@ -1,0 +1,18 @@
+.gau_button {
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 24.2857px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  text-indent: 0px;
+  text-transform: none;
+  white-space: normal;
+  word-spacing: 0px;
+  background-color: rgb(93, 127, 185);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 4px;
+}
