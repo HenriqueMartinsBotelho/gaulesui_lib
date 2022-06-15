@@ -10,8 +10,8 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const HelloWorld = Template.bind({});
-HelloWorld.args = {
+export const Main = Template.bind({});
+Main.args = {
   label: "Hello world!",
 };
 
