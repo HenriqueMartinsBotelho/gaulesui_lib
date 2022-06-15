@@ -35,22 +35,10 @@ npm run build-storybook
 
 Por favor, verifique alguns dos meus outros projetos. Sinta-se à vontade para deixar um comentário ou pergunta e compartilhar com outras pessoas se achar alguma delas útil:
 
-- [Go Super Code](https://dev.to/alexeagleson/understanding-the-modern-web-stack-running-a-local-web-server-4d8g)
-
-- [ESLint](https://dev.to/alexeagleson/understanding-the-modern-web-stack-linters-eslint-59pm)
-
-- [Prettier](https://dev.to/alexeagleson/understanding-the-modern-web-stack-prettier-214j)
-
-- [Babel](https://dev.to/alexeagleson/building-a-modern-web-stack-babel-3hfp)
-
-- [React & JSX](https://dev.to/alexeagleson/understanding-the-modern-web-stack-react-with-and-without-jsx-31c7)
-
-- [Webpack: The Basics](https://dev.to/alexeagleson/understanding-the-modern-web-stack-webpack-part-1-2mn1)
-
-- [Webpack: Loaders, Optimizations & Bundle Analysis](https://dev.to/alexeagleson/understanding-the-modern-web-stack-webpack-part-2-49bj)
-
-- [Webpack: DevServer, React & Typescript](https://dev.to/alexeagleson/understanding-the-modern-web-stack-webpack-devserver-react-typescript-4b9b)
-
----
-
-For more tutorials like this, follow me <a href="https://twitter.com/eagleson_alex?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@eagleson_alex</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> on Twitter
+1. [**GoSuperCode**](https://gosupercode.vercel.app/): Uma engine para execução remota de código que pode ser usada para construir um site de aprendizado de
+   algorotitmos e estrutura de dados como algoexpert, hackerrank e leetcode.
+2. [**AlgoClassic**](https://algoclassic2.vercel.app/): Baseada no famoso site
+   [**https://www.bigocheatsheet.com/**](https://www.bigocheatsheet.com/) do Eric Rowell essa tabela dinâmica vai te ajudar a estudar algoritmos e estrutura de dados.
+3. [**LangLearn**](https://langlearn-bice.vercel.app/) É importante para um cientista da computação ou programador conhecer várias linguagens de paradigmas diferentes. Esse é o objetivo desse jogo e tutorial interativo.
+4. [**CodeEditor**](https://codeeditor-rose.vercel.app/) Que tal aprender a programar em grupo online nesse site que apresenta um editor de código e chat em vídeo com a opção de salvar cógidos usando a API do GitHub.
+5. [**CodePerformance**](https://github.com/HenriqueMartinsBotelho/code_performance) Um simples projeto para comparar a velocidade de execução de dois códigos.
