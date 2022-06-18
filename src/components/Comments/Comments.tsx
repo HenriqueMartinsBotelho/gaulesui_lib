@@ -12,11 +12,12 @@ export interface ICommentsProps {
   currentUserId: string;
 }
 
+
 const Comments = ({ currentUserId }: ICommentsProps) => {
   const [backendComments, setBackendComments] = useState<any>([]);
   const [activeComment, setActiveComment] = useState<any>(null);
 
-  
+
   const rootComments = backendComments.filter(
     (backendComment: any) => backendComment.parentId === null
   );
