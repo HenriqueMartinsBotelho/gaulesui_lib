@@ -4,13 +4,13 @@ import "./Comments.css";
 
 interface ICommentProps {
   // children: React.ReactNode
-  comment: any;
-  replies: any;
-  currentUserId: any;
-  deleteComment: any;
+  comment?: any;
+  replies?: any;
+  currentUserId?: any;
+  deleteComment?: any;
   activeComment?: any;
-  addComment: any;
-  updateComment: any;
+  addComment?: any;
+  updateComment?: any;
   setActiveComment?: any;
   parentId?: any;
 }
@@ -26,8 +26,10 @@ const Comment = ({
   setActiveComment,
   parentId = null,
 }: ICommentProps) => {
-  const minutesToShow =  300000000000000;
-  const timePassed = new Date().getTime() - new Date(comment.createdAt).getTime() > minutesToShow ;
+  const minutesToShow = 300000000000000;
+  const timePassed =
+    new Date().getTime() - new Date(comment.createdAt).getTime() >
+    minutesToShow;
   const canReply = Boolean(currentUserId);
   const canEdit = currentUserId === comment.userId && !timePassed;
   const canDelete = currentUserId === comment.userId && !timePassed;
@@ -102,15 +104,15 @@ const Comment = ({
             {replies.map((reply) => (
               <Comment
                 comment={reply}
-                key={reply.key}
-                replies={[]}
-                currentUserId={currentUserId}
-                deleteComment={deleteComment}
-                updateComment={updateComment}
-                activeComment={activeComment}
+                key={reply.id}
                 setActiveComment={setActiveComment}
+                activeComment={activeComment}
+                updateComment={updateComment}
+                deleteComment={deleteComment}
                 addComment={addComment}
                 parentId={comment.id}
+                replies={[]}
+                currentUserId={currentUserId}
               />
             ))}
           </div>

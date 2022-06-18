@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 interface ICommentFormProps {
-  submitLabel: any;
-  handleSubmit: any;
+  handleSubmit?: any;
+  submitLabel?: any;
   hasCancelButton?: any;
   initialText?: any;
   handleCancel?: any;
