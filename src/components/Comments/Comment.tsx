@@ -27,7 +27,7 @@ const Comment = ({
   parentId = null,
 }: ICommentProps) => {
   const minutesToShow =  300000000000000;
-  const timePassed = new Date() - new Date(comment.createdAt) > minutesToShow ;
+  const timePassed = new Date().getTime() - new Date(comment.createdAt).getTime() > minutesToShow ;
   const canReply = Boolean(currentUserId);
   const canEdit = currentUserId === comment.userId && !timePassed;
   const canDelete = currentUserId === comment.userId && !timePassed;
