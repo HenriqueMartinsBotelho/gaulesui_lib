@@ -13,6 +13,7 @@ export interface ICommentsProps {
 }
 
 
+
 const Comments = ({ currentUserId }: ICommentsProps) => {
   const [backendComments, setBackendComments] = useState<any>([]);
   const [activeComment, setActiveComment] = useState<any>(null);
