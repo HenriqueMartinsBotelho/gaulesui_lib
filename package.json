@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/HenriqueMartinsBotelho/gaulesui_lib.git"
   },
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Biblioteca de components React.",
   "scripts": {
     "rollup": "rollup -c",
