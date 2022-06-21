@@ -1,18 +1,34 @@
 import CommentForm from "./CommentForm";
 import "./Comments.css";
 
+interface Icomment {
+  id: string;
+  body: string;
+  username: string;
+  userId: string;
+  parentId: null | string;
+  createdAt: string;
+}
+
+interface IactiviteComment {
+  id?: string;
+  type?: string 
+}
+
 interface ICommentProps {
-  // children: React.ReactNode
-  comment?: any;
-  replies?: any;
-  currentUserId?: any;
-  deleteComment?: any;
-  activeComment?: any;
-  addComment?: any;
-  updateComment?: any;
-  setActiveComment?: any;
+  comment?: Icomment;
+  replies?: Icomment[];
+  currentUserId?: string;
+  deleteComment?: (id:string) => void;
+  activeComment?: { id: string, type: string };
+  addComment?: (text: string, parentId?: string | null) => void;
+  updateComment?: (text: string, parentId?: string | null) => void;
+  setActiveComment?: ({id, type}: IactiviteComment) => void;
   parentId?: any;
 }
+
+// setActiveComment({ id: comment.id, type: "replying" })
+// setActiveComment(null)
 
 const Comment = ({
   comment,

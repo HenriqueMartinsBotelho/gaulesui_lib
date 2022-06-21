@@ -3,7 +3,7 @@
    Os componentes exportado são Comment, e CommentForm
 */
 
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import {
   getComments as getCommentsApi,
   createComment as createCommentApi,
@@ -35,7 +35,7 @@ const Comments = ({ currentUserId }: ICommentsProps) => {
       });
   };
 
-  const addComment = (text, parentId) => {
+  const addComment = (text:string, parentId:number) => {
     console.log("addComment", text, parentId);
     createCommentApi(text, parentId).then((comment) => {
       setBackendComments([comment, ...backendComments]);
@@ -100,4 +100,3 @@ const Comments = ({ currentUserId }: ICommentsProps) => {
 
 export default Comments;
 
-// TODO: Remover todos os any e colocar uma tipagem correta

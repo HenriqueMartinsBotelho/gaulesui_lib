@@ -59,6 +59,6 @@ export const getComments = async ()  => {
     return { text };
   };
   
-  export const deleteComment = async () => {
+  export const deleteComment = async (commentId: number) => {
     return {};
   };
