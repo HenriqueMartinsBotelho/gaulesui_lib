@@ -1,3 +1,8 @@
+/* Esse componente não é exportado
+   Ele serve apenas para teste no storybook
+   Os componentes exportado são Comment, e CommentForm
+*/
+
 import React, { useEffect, useState } from "react";
 import {
   getComments as getCommentsApi,

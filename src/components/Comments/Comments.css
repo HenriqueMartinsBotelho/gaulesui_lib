@@ -29,6 +29,7 @@
     background: rgb(59, 130, 246);
     border-radius: 8px;
     color: white;
+    margin: 0px 2px;
   }
   
   .gau_comment-form-button:hover:enabled {

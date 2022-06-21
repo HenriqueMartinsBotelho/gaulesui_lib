@@ -1,4 +1,3 @@
-import React from "react";
 import CommentForm from "./CommentForm";
 import "./Comments.css";
 

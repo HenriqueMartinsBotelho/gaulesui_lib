@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 interface ICommentFormProps {
   handleSubmit?: any;
   submitLabel?: any;
@@ -8,7 +6,7 @@ interface ICommentFormProps {
   handleCancel?: any;
 }
 
-var text = "f"
+let text = "Hello"
 
 const updateText = (texto) => {
   text = texto 
@@ -18,19 +16,16 @@ const CommentForm = ({
   submitLabel,
   handleSubmit,
   hasCancelButton = false,
-  initialText = "",
+  initialText = "Texto inicial",
   handleCancel,
 }: ICommentFormProps) => {
   // const [text, setText] = useState(initialText); não pode usar hook pois dá erro 
   // Invalid hook call. Hooks can only be called inside of the body of a function
-  // quando for usar a lib. Use o useRef
-  // var text = initialText
   const isTextareaDisabled = text.length === 0;
   const onSubmit = (event) => {
     event.preventDefault();
     handleSubmit(text);
-    // setText("");
-    text = "f"
+    text = initialText
   };
 
   return (
