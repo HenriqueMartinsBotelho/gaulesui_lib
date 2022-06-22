@@ -1,0 +1,53 @@
+   .gau_slide{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .gau_slide img{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .gau_slide-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: rgba(225, 35, 69, 0.9);
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+  }
+  .gau_slide:hover .gau_slide-content{
+    transform:translate(0, 0);
+    -webkit-transform:translate(0, 0);
+  }
+  
+  /*Directions*/
+  .gau_slide-top .gau_slide-content{
+    transform:translate(0, -100%);
+    -webkit-transform:translate(0, -100%);
+  }
+  .gau_slide-left .gau_slide-content{
+    transform:translate(-100%, 0);
+    -webkit-transform:translate(-100%, 0);
+  }
+  .gau_slide-right .gau_slide-content{
+    transform:translate(100%, 0);
+    -webkit-transform:translate(100%, 0);
+  }
+  .gau_slide-bottom .gau_slide-content{
+    transform:translate(0, 100%);
+    -webkit-transform:translate(0, 100%);
+  }
+  
