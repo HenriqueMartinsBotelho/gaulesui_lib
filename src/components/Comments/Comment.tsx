@@ -10,20 +10,22 @@ interface Icomment {
   createdAt: string;
 }
 
-interface IactiviteComment {
-  id?: string;
-  type?: string 
-}
+// interface IactiviteComment {
+//   id?: string;
+//   type?: string 
+// }
+
+type IActiveComment = { id: string, type: string } | null
 
 interface ICommentProps {
   comment?: Icomment;
   replies?: Icomment[];
   currentUserId?: string;
   deleteComment?: (id:string) => void;
-  activeComment?: { id: string, type: string };
+  activeComment?: IActiveComment;
   addComment?: (text: string, parentId?: string | null) => void;
   updateComment?: (text: string, parentId?: string | null) => void;
-  setActiveComment?: ({id, type}: IactiviteComment) => void;
+  setActiveComment?: ({id, type} : IActiveComment) => void;
   parentId?: any;
 }
 
